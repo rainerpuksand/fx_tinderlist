@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListCell?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="330.0" prefWidth="250.0" type="javafx.scene.control.ListCell" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <!-- <graphic>
+        <VBox>
+            <children>
+                <Label fx:id="titleLabel" />
+                <VBox>
+                    <children>
+                        <Label fx:id="commentLabel" />
+                        <Label fx:id="descriptionLabel"/>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </graphic>-->
+
+   <graphic>
+      <StackPane minHeight="300.0" minWidth="200.0" prefHeight="118.0" prefWidth="260.0">
+         <children>
+            <ImageView fx:id="imgV1" fitHeight="300.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imgV2" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_RIGHT">
+               <StackPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </StackPane.margin>
+               <image>
+                  <Image url="@../../../img/heart.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="nameText" alignment="BOTTOM_LEFT" text="Label" StackPane.alignment="BOTTOM_CENTER">
+               <StackPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </StackPane.margin>
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </Label>
+         </children></StackPane>
+   </graphic>
+</fx:root>
